@@ -1,17 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 import MainPage from './mainpage.js';
 import Attendees from './attendees-list.js';
 
 const Main = () => {
-    const [attendeeData, setAttendeeData] = useState({
+    const initialState = {
         userName: "",
         surName: "",
         email: "",
         country: "",
         phone: "",
         job: "",
-    })
+    };
+    const [attendeeData, setAttendeeData] = useState(initialState);
     const [savedAttendeesData, setSavedAttendeesData] = useState([])
 
     const handleInput = (e) => {
@@ -82,22 +83,26 @@ const Main = () => {
         }
     }
 
+    useEffect(() => {
+        const data = localStorage.getItem("data")
+        if (data) {
+            setSavedAttendeesData(JSON.parse(data))
+        }   
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem("data", JSON.stringify(savedAttendeesData));
+    })
+    
     const handleSubmit = (e) => {
-        setSavedAttendeesData(oldArray => [...oldArray, attendeeData]);
-        setAttendeeData({
-            userName: "",
-            surName: "",
-            email: "",
-            country: "",
-            phone: "",
-            job: "",
-        })
+        setSavedAttendeesData(oldArray => [...oldArray, attendeeData])
+        setAttendeeData(initialState)
         e.preventDefault()
     }
 
-    return(
+    return (
     <Router>
-            <div>
+            <div className="header">
                 <h1>Bitcoin, the monetary revolution</h1>
                 <h2>How the currency became the hot item that it is right now</h2>
                 <h3>Monday, January 11, 2021 | 12:30pm Time in Buenos Aires </h3>

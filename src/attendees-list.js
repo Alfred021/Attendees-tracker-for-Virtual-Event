@@ -15,10 +15,10 @@ const Attendees = ({attendees}) => {
         {attendees.map(element => {
             return (
             <div className="card">
-                <h3><b>{element.userName} + {element.surName}</b></h3>
+                <h3><b>{element.userName + " " + element.surName}</b></h3>
                 <p>{element.email}</p>
                 <p>{element.phone}</p>
-                <p>{element.job}Job</p>
+                <p>{element.job}</p>
                 <p>{element.country}</p>
            </div>
             )

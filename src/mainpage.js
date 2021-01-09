@@ -5,7 +5,7 @@ const MainPage = ({attendee, handleData, submit}) => {
     return (
         <>
         <div>
-            <form target="_self">
+            <form onSubmit={submit} target="_self">
                 <label for="username">Name</label>
                 <input type="text" value={attendee.userName} onChange={handleData} name="userName" required></input>
 
@@ -273,7 +273,7 @@ const MainPage = ({attendee, handleData, submit}) => {
                 <label for="job">Job</label>
                 <input type="text" value={attendee.job} onChange={handleData} name="job" required></input>
 
-                <button type="button" onClick={submit}>Submit</button>
+                <button type="submit">Submit</button>
             </form>
 
             <div>
