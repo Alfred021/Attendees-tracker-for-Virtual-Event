@@ -43,6 +43,10 @@
     text-align: center;
 }
 
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.989)
+}
+
 .modal > .modal-body {
     z-index: 2;
     position: relative;
@@ -59,4 +63,21 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.modal.modal-fade {
+    animation: fade-in 1s 1 linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

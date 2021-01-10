@@ -119,7 +119,7 @@ const Main = () => {
                     <Attendees attendees={savedAttendeesData}/>
                 </Route>
             </Switch>
-            <Modal ref={modal}>
+            <Modal fade ref={modal}>
             <p>Success! We'll be in touch with you through the email that you provided within the form.
 </p>
             </Modal>

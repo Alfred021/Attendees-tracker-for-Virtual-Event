@@ -4,13 +4,16 @@ import './modal.css';
 
 const modalElement = document.getElementById("modal-root");
 
-export const Modal = ({children}, ref) => {
+export const Modal = ({children, fade}, ref) => {
     const [isDisplayed, setIsDisplayed] = useState(false);
 
-    const close = useCallback(() => setIsDisplayed(false), [])
+    const close = useCallback(() => { 
+        setIsDisplayed(false)
+    }, [])
 
     useImperativeHandle(ref, () => ({
-        open: () => setIsDisplayed(true),
+        open: () => {setIsDisplayed(true)
+        },
         close
     }), [close])
 
@@ -30,7 +33,7 @@ export const Modal = ({children}, ref) => {
     }, [handleEscapeKey, isDisplayed])
 
     return createPortal( isDisplayed ? (
-            <div className="modal">
+            <div className={`modal ${fade ? "modal-fade" : ""}`}>
                 <div className="modal-overlay" onClick={close} /> 
                 <div className="modal-body">
                     {children}
