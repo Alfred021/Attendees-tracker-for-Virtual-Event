@@ -120,8 +120,10 @@ const Main = () => {
                 </Route>
             </Switch>
             <Modal ref={modal}>
-                Hello World
+            <p>Success! We'll be in touch with you through the email that you provided within the form.
+</p>
             </Modal>
+
     </Router>
     )
 }

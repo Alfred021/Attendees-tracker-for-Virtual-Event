@@ -1,5 +1,6 @@
 import React, { useState, useImperativeHandle, forwardRef, useCallback, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import './modal.css';
 
 const modalElement = document.getElementById("modal-root");
 
@@ -18,6 +19,7 @@ export const Modal = ({children}, ref) => {
             close()
         }
     },[close])
+
     useEffect(() => {
         if (isDisplayed) {
             document.addEventListener("keydown", handleEscapeKey, false)
@@ -27,9 +29,16 @@ export const Modal = ({children}, ref) => {
         }
     }, [handleEscapeKey, isDisplayed])
 
-    return createPortal( isDisplayed ? (<div className="modal">{children}</div>) : null
-    , modalElement
-    )
+    return createPortal( isDisplayed ? (
+            <div className="modal">
+                <div className="modal-overlay" onClick={close} /> 
+                <div className="modal-body">
+                    {children}
+                    <span role="button" className="modal-close" aria-label="close" onClick={close}>OK</span>
+                </div>   
+            </div>) : null
+            , modalElement
+            )
 }
 
 export default forwardRef(Modal);
