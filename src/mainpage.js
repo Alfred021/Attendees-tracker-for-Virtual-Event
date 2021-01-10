@@ -6,16 +6,16 @@ const MainPage = ({attendee, handleData, submit}) => {
         <>
         <div>
             <form onSubmit={submit} target="_self">
-                <label for="username">Name</label>
-                <input type="text" value={attendee.userName} onChange={handleData} name="userName" required></input>
+                <label for="username">Name
+                <input type="text" value={attendee.userName} onChange={handleData} name="userName" required></input></label>
 
-                <label for="usersur-name">SurName</label>
-                <input type="text" value={attendee.surName} onChange={handleData} name="surName" required></input>
+                <label for="usersur-name">SurName
+                <input type="text" value={attendee.surName} onChange={handleData} name="surName" required></input></label>
 
-                <label for="email">Mail</label>
-                <input type="email" value={attendee.email} onChange={handleData} name="email" required></input>
+                <label for="email">Mail
+                <input type="email" value={attendee.email} onChange={handleData} name="email" required></input></label>
 
-                <label for="country">Country</label>
+                <label for="country">Country
                 <select for="country" value={attendee.country} onChange={handleData} name="country" required>
 
                     <option value="" disabled selected>Select your option</option>
@@ -265,13 +265,13 @@ const MainPage = ({attendee, handleData, submit}) => {
                     <option value="Zaire">Zaire</option>
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
-                </select>
+                </select></label>
 
-                <label for="phone">Phone</label>
-                <input type="tel" value={attendee.phone} onChange={handleData} name="phone" pattern="[0-9]{2} [0-9]{4} [0-9]{4}"></input>
+                <label for="phone">Phone
+                <input type="tel" value={attendee.phone} onChange={handleData} name="phone" pattern="[0-9]{2} [0-9]{4} [0-9]{4}"></input></label>
 
-                <label for="job">Job</label>
-                <input type="text" value={attendee.job} onChange={handleData} name="job" required></input>
+                <label for="job">Job
+                <input type="text" value={attendee.job} onChange={handleData} name="job" required></input></label>
 
                 <button type="submit">Submit</button>
             </form>

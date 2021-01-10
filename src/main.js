@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 import MainPage from './mainpage.js';
 import Attendees from './attendees-list.js';
+import Modal from './modal.js';
 
 const Main = () => {
     const initialState = {
@@ -14,6 +15,7 @@ const Main = () => {
     };
     const [attendeeData, setAttendeeData] = useState(initialState);
     const [savedAttendeesData, setSavedAttendeesData] = useState([])
+    const modal = useRef(null)
 
     const handleInput = (e) => {
 
@@ -97,6 +99,7 @@ const Main = () => {
     const handleSubmit = (e) => {
         setSavedAttendeesData(oldArray => [...oldArray, attendeeData])
         setAttendeeData(initialState)
+        modal.current.open()
         e.preventDefault()
     }
 
@@ -115,7 +118,10 @@ const Main = () => {
                 <Route path="/attendees">
                     <Attendees attendees={savedAttendeesData}/>
                 </Route>
-            </Switch>      
+            </Switch>
+            <Modal ref={modal}>
+                Hello World
+            </Modal>
     </Router>
     )
 }
