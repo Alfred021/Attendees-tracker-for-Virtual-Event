@@ -20,7 +20,7 @@
 }
 
 .home-link {
-    background: none;
+    background-color: turquoise;
     border: 1px solid green;
     border-radius: 1em;
     outline: none;
@@ -43,6 +43,7 @@
     border-radius: 2em;
     padding: 5em;   
     font-size: 1.2em; 
+    background-color: snow;
 }
 
 .form > input {
@@ -67,6 +68,13 @@
     padding: 1em;
     margin-top: 0.7em;
     margin-bottom: 0.7em;
+    font-size: 0.695em;
+    font-weight: bold;
+    background-color: wheat;    
+}
+
+.form > button:hover {
+    background-color: tan;
 }
 
 .description {   

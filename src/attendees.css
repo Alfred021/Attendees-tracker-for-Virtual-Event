@@ -1,6 +1,8 @@
 .info-event {
     padding: 2em;
     font-size: 1.2em;
+    text-align: center;
+    color: darkslategrey
 }
 
 .card {
@@ -8,10 +10,12 @@
     transition: 0.3s;
     border-radius: 1.5em;
     font-size: 1.2em;
+    background-color: seashell;
+    color: black;
 }
 
 .attendees {
-    padding: 2em;
+    padding: 1em;
 }
 
 .card:hover {
@@ -20,4 +24,8 @@
 
 .container {
     padding: 1em 4em;
+}
+
+.background {
+    background-color: ghostwhite;
 }

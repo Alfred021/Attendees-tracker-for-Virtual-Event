@@ -3,9 +3,9 @@ import "./attendees.css"
 const Attendees = ({attendees}) => {
     return(
         <>
+        <div className="background">
             <div className="info-event">
                 <h1>Attendees</h1>
-
                 <div>
                     <p><b>Start Date:</b> 2021-01-11 | 12:30pm GMT-3</p>
                     <p><b>Duration:</b> 2.5 Hours</p>
@@ -17,6 +17,8 @@ const Attendees = ({attendees}) => {
         <div className="attendees">
         {attendees.map(element => {
             return (
+                <>
+                <br></br>
             <div className="card">
                 <div className="container">
                     <h3><b>{element.userName + " " + element.surName}</b></h3>
@@ -26,9 +28,12 @@ const Attendees = ({attendees}) => {
                     <p><b>Country: </b>{element.country}</p>
                 </div>
            </div>
+           <br></br>
+           </>
             )
         })}  
-        </div>    
+        </div>   
+        </div> 
         </>
     )
 }
