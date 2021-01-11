@@ -17,7 +17,7 @@ const MainPage = ({attendee, handleData, submit}) => {
                 <br></br>
                 <input type="text" value={attendee.userName} onChange={handleData} name="userName" required></input>
                 <br></br>
-                <label for="usersur-name">SurName</label>
+                <label for="usersur-name">Surname</label>
                 <br></br>
                 <input type="text" value={attendee.surName} onChange={handleData} name="surName" required></input>
                 <br></br>

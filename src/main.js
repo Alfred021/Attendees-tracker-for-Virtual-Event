@@ -122,7 +122,7 @@ const Main = () => {
                 </Route>
             </Switch>
             <Modal fade ref={modal}>
-            <p>Success! We'll be in touch with you through the email that you provided within the form.
+            <p>Success! We'll be in touch with you through the email that you provided us.
 </p>
             </Modal>
 

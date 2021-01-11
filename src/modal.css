@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.2em 1em;
+    padding: 2.2em 2em;
     z-index: 999999;
     box-sizing: border-box;
 }
@@ -57,7 +57,7 @@
     overflow-y: auto;
     overflow-x: hidden; 
     max-height: 100%;
-    padding: 1em 2em;
+    padding: 2em 3em;
     color: #c3c0c0;
     display: flex;
     align-items: center;
