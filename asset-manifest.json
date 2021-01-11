@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/attendees-tracker-for-virtual-event/static/css/main.ce5763b0.chunk.css",
+    "main.js": "/attendees-tracker-for-virtual-event/static/js/main.49d0a6ec.chunk.js",
+    "main.js.map": "/attendees-tracker-for-virtual-event/static/js/main.49d0a6ec.chunk.js.map",
+    "runtime-main.js": "/attendees-tracker-for-virtual-event/static/js/runtime-main.6c27eebf.js",
+    "runtime-main.js.map": "/attendees-tracker-for-virtual-event/static/js/runtime-main.6c27eebf.js.map",
+    "static/js/2.c827edf3.chunk.js": "/attendees-tracker-for-virtual-event/static/js/2.c827edf3.chunk.js",
+    "static/js/2.c827edf3.chunk.js.map": "/attendees-tracker-for-virtual-event/static/js/2.c827edf3.chunk.js.map",
+    "static/js/3.cd6e1a32.chunk.js": "/attendees-tracker-for-virtual-event/static/js/3.cd6e1a32.chunk.js",
+    "static/js/3.cd6e1a32.chunk.js.map": "/attendees-tracker-for-virtual-event/static/js/3.cd6e1a32.chunk.js.map",
+    "index.html": "/attendees-tracker-for-virtual-event/index.html",
+    "static/css/main.ce5763b0.chunk.css.map": "/attendees-tracker-for-virtual-event/static/css/main.ce5763b0.chunk.css.map",
+    "static/js/2.c827edf3.chunk.js.LICENSE.txt": "/attendees-tracker-for-virtual-event/static/js/2.c827edf3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c27eebf.js",
+    "static/js/2.c827edf3.chunk.js",
+    "static/css/main.ce5763b0.chunk.css",
+    "static/js/main.49d0a6ec.chunk.js"
+  ]
+}
