@@ -15,14 +15,18 @@ Open the terminal and type: npm install --save gh-pages
 And add the following scripts in your package.json(), section scripts
 
   "scripts": {
-+   "predeploy": "npm run build", <= this one
-+   "deploy": "gh-pages -d build", <= and this other one
++   "predeploy": "npm run build", <= this
++   "deploy": "gh-pages -d build", <= and this
     "start": "react-scripts start",
     "build": "react-scripts build",
 
 Step 3: Deploy the site by running npm run deploy
 
 Open the terminal and type: npm run deploy
+
+Step 4: For a project page, ensure your project’s settings use gh-pages
+
+Finally, make sure GitHub Pages option in your GitHub project settings is set to use the gh-pages branch, which will be created after deployment.
 
 ## The App should be available at: [https://alfred021.github.io/attendees-tracker-for-virtual-event/](https://alfred021.github.io/attendees-tracker-for-virtual-event/)
 
