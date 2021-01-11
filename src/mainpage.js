@@ -1,21 +1,32 @@
 import { NavLink } from 'react-router-dom';
+import "./main.css"
 
 const MainPage = ({attendee, handleData, submit}) => {
 
+
     return (
         <>
-        <div>
-            <form onSubmit={submit} target="_self">
-                <label for="username">Name
-                <input type="text" value={attendee.userName} onChange={handleData} name="userName" required></input></label>
+        <div className="app-body">
 
-                <label for="usersur-name">SurName
-                <input type="text" value={attendee.surName} onChange={handleData} name="surName" required></input></label>
+            <div className="form-side">
+            <form onSubmit={submit} target="_self" className="form">
 
-                <label for="email">Mail
-                <input type="email" value={attendee.email} onChange={handleData} name="email" required></input></label>
+                <h3>Reserve your spot now by signing up!</h3>
 
-                <label for="country">Country
+                <label for="username">Name</label>
+                <br></br>
+                <input type="text" value={attendee.userName} onChange={handleData} name="userName" required></input>
+                <br></br>
+                <label for="usersur-name">SurName</label>
+                <br></br>
+                <input type="text" value={attendee.surName} onChange={handleData} name="surName" required></input>
+                <br></br>
+                <label for="email">Email</label>
+                <br></br>
+                <input type="email" value={attendee.email} onChange={handleData} name="email" required></input>
+                <br></br>
+                <label for="country">Country</label>
+                <br></br>
                 <select for="country" value={attendee.country} onChange={handleData} name="country" required>
 
                     <option value="" disabled selected>Select your option</option>
@@ -265,51 +276,69 @@ const MainPage = ({attendee, handleData, submit}) => {
                     <option value="Zaire">Zaire</option>
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
-                </select></label>
-
-                <label for="phone">Phone
-                <input type="tel" value={attendee.phone} onChange={handleData} name="phone" pattern="[0-9]{2} [0-9]{4} [0-9]{4}"></input></label>
-
-                <label for="job">Job
-                <input type="text" value={attendee.job} onChange={handleData} name="job" required></input></label>
-
+                </select>
+                <br></br>
+                <label for="phone">Phone</label>
+                <br/>
+                <input type="tel" value={attendee.phone} onChange={handleData} name="phone" pattern="[0-9]{2} [0-9]{4} [0-9]{4}"></input>
+                <br></br>
+                <label for="job">Job</label>
+                <br></br>
+                <input type="text" value={attendee.job} onChange={handleData} name="job" required></input>
+                <br></br>
                 <button type="submit">Submit</button>
             </form>
+            </div>
 
-            <div>
+            <div className="description-side">
+            <div className="description">
                 <p>The Bitcoin has been in the news pretty often during the end of the 2020 and even at the beginning of 2021, it has seen a tremendous grow and it seems that has no ceiling for the moment.</p>
                 <p>In this webinar you are going to learn how to start investing in bitcoin, the best strategies from some of the experts on the subject</p>
                 <p>Our guests are:</p>
 
-                <ul>
-                    <ul>
-                        <li>Joshua Rosfield</li>
-                        <li>CEO at Rosaria Inc.</li>
-                    </ul>
-                    <ul>
-                        <li>Clive Rosfield</li>
-                        <li>President at Rosaria Inc.</li>
-                    </ul>
-                    <ul>
-                        <li>Jill Warrick</li>
-                        <li>CTO at Waloed Inc.</li>
-                    </ul>
-                    <ul>
-                        <li>Jill Warrick</li>
-                        <li>CTO at Waloed Inc.</li>
-                    </ul>
-                    <ul>
-                        <li>Romina Inzaghi</li>
-                        <li>Senior Sales Manager at CryptoSr S.A</li>
-                    </ul>
+                <ul style={ {listStyleType: "none"} }>
+                        <li>
+                            <div className="profile">
+                                <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
+                                <div>
+                                <p>Joshua Rosfield</p>
+                                <p>CEO at Rosaria Inc.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="profile">
+                                <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
+                                <div>
+                                <p>Clive Rosfield</p>
+                                <p>President at Rosaria Inc.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="profile">
+                                <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
+                                <div>
+                                <p>Jill Warrick</p>
+                                <p>CTO at Waloed Inc.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="profile">
+                                <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
+                                <div>
+                                <p>Romina Inzaghi</p>
+                                <p>Senior Sales Manager at CryptoSr S.A</p>
+                                </div>
+                            </div>
+                        </li>
                 </ul>
-            </div>
 
-            <p>Nearing the end of the webinar there will be a QA session where the attendants can ask questions freely to the guests</p>
-            <p>See you on the 11th</p>
-            <footer>
-                <NavLink to="/attendees">Attendance Report</NavLink>
-            </footer>
+                <p>Nearing the end of the webinar there will be a QA session where the attendants can ask questions freely to the guests</p>
+                <p>See you on the 11th!</p>
+            </div>
+            </div>
         </div>
         </>
     )

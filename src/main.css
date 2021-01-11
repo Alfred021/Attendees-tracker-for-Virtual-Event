@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background-color:turquoise;
+    color: white;
+    box-sizing: border-box;  
+    padding: 1em;
+    align-items: baseline;
+    text-align: center;
+}
+
+.home-link {
+    background: none;
+    border: 1px solid green;
+    border-radius: 1em;
+    outline: none;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.home-link:hover {
+    background-color:teal;
+}
+
+.app-body {
+    display: flex;
+    padding-top: 2em;
+}
+
+.form {
+    border: 2px solid slategrey;
+    border-radius: 1em;
+    padding: 4em;   
+    font-size: 1.2em;   
+}
+
+.form > input {
+    width: 22em;
+    height: 3.2em;
+    padding: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.form > select {
+    width: 22em;
+    height: 3.2em;
+    padding: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.form > button {
+    width: 22em;
+    height: 3.2em;
+    padding: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.description {   
+    font-size: 1.2em;
+
+}
+
+.form-side {
+    padding: 1em 5em 3em 2em;
+    width: 50%;
+    float: left;
+}
+
+.description-side {
+    padding: 1em 5em 3em 2em;   
+    width: 50%;
+    float: right;
+}
+
+img {
+    background-color: white;
+    border-radius: 2em;
+    margin-right: 1em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    line-height: 0.4em;
+}

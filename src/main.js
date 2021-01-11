@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom"
 import MainPage from './mainpage.js';
 import Attendees from './attendees-list.js';
 import Modal from './modal.js';
+import "./main.css"
 
 const Main = () => {
     const initialState = {
@@ -106,10 +107,11 @@ const Main = () => {
     return (
     <Router>
             <div className="header">
-                <h1>Bitcoin, the monetary revolution</h1>
-                <h2>How the currency became the hot item that it is right now</h2>
-                <h3>Monday, January 11, 2021 | 12:30pm Time in Buenos Aires </h3>
-                <NavLink to="/">Home</NavLink>
+                <h2>Bitcoin, the monetary revolution</h2>
+                <h3>How the currency became the hot item that it is right now</h3>
+                <h4>Monday, January 11, 2021 | 12:30pm Time in Buenos Aires </h4>
+                <NavLink className="home-link" to="/">Home</NavLink>
+                <NavLink className="home-link" to="/attendees">Attendance Report</NavLink>
             </div>
             <Switch>
                 <Route path="/" exact>
