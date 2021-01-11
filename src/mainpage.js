@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import "./main.css"
 
 const MainPage = ({attendee, handleData, submit}) => {
@@ -340,6 +339,15 @@ const MainPage = ({attendee, handleData, submit}) => {
             </div>
             </div>
         </div>
+
+        <footer>
+            <p>© 2021</p>
+            <div className="logos">
+                <img alt="github" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png" width="50px" height="50px"></img>
+                <img alt="linkedin" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png" width="50px" height="50px"></img>
+                <img alt="email" src="https://icons-for-free.com/iconfiles/png/512/mail+message+new+send+icon-1320166532032442575.png" width="50px" height="50px"></img>
+            </div>
+        </footer>
         </>
     )
 }
