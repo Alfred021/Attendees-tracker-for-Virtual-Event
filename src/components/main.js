@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
+import {HashRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 import MainPage from './mainpage.js';
 import Attendees from './attendees-list.js';
 import Modal from './modal.js';
@@ -116,7 +116,7 @@ const Main = () => {
                 <Route path="/" exact>
                     <MainPage attendee={attendeeData} handleData={handleInput} submit={handleSubmit}/>
                 </Route>
-                <Route path="/attendees">
+                <Route path="/attendees" exact>
                     <Attendees attendees={savedAttendeesData}/>
                 </Route>
             </Switch>
