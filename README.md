@@ -1,3 +1,31 @@
+# Attendees Tracker For Virtual Event
+
+This Project was created using create-react-app and react-router.
+
+# Deployment
+
+Step 1: Add homepage to package.json
+
+"homepage": "https://alfred021.github.io/attendees-tracker-for-virtual-event/",
+
+Step 2: Install gh-pages and add deploy to scripts in package.json
+
+Open the terminal and type: npm install --save gh-pages
+
+And add the following scripts in your package.json(), section scripts
+
+  "scripts": {
++   "predeploy": "npm run build", <= this one
++   "deploy": "gh-pages -d build", <= and this other one
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+
+Step 3: Deploy the site by running npm run deploy
+
+Open the terminal and type: npm run deploy
+
+## The App should be available at: [https://github.com/Alfred021/attendees-tracker-for-virtual-event](https://github.com/Alfred021/attendees-tracker-for-virtual-event)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
