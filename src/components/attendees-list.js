@@ -5,12 +5,12 @@ const Attendees = ({attendees}) => {
         <>
         <div className="background">
             <div className="info-event">
-                <h1>Attendees</h1>
                 <div>
                     <p><b>Start Date:</b> 2021-01-11 | 12:30pm GMT-3</p>
                     <p><b>Duration:</b> 2.5 Hours</p>
                     <p><b>Attendance Finalized:</b> Not Yet</p>
                 </div>
+                <h1>Attendees</h1>
             </div>
 
 

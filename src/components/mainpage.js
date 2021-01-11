@@ -292,8 +292,8 @@ const MainPage = ({attendee, handleData, submit}) => {
             <div className="description-side">
             <div className="description">
                 <p>The Bitcoin has been in the news pretty often during the end of the 2020 and even at the beginning of 2021, it has seen a tremendous grow and it seems that has no ceiling for the moment.</p>
-                <p>In this webinar you are going to learn how to start investing in bitcoin, the best strategies from some of the experts on the subject</p>
-                <p>Our guests are:</p>
+                <p>In this webinar you are going to learn how to start investing in bitcoin, with the best strategies from some of the experts on the subject.</p>
+                <p>Our speakers are:</p>
                 
                     <div>    
                             <div className="profile">
@@ -330,7 +330,7 @@ const MainPage = ({attendee, handleData, submit}) => {
                     </div>   
                 
 
-                <p>Nearing the end of the webinar there will be a QA session where the attendants can ask questions freely to the guests</p>
+                <p>Nearing the end of the webinar there will be a Q&A session where the attendants can ask questions freely to the speakers.</p>
                 <p>See you on the 11th!</p>
             </div>
             </div>
