@@ -5,12 +5,12 @@ const MainPage = ({attendee, handleData, submit}) => {
 
     return (
         <>
-        <div className="app-body">
+        <div className="row">
 
             <div className="form-side">
             <form onSubmit={submit} target="_self" className="form">
 
-                <h3>Reserve your spot now by signing up!</h3>
+                <h4>Reserve your spot now by signing up!</h4>
 
                 <label for="username">Name</label>
                 <br></br>
@@ -295,8 +295,8 @@ const MainPage = ({attendee, handleData, submit}) => {
                 <p>In this webinar you are going to learn how to start investing in bitcoin, the best strategies from some of the experts on the subject</p>
                 <p>Our guests are:</p>
 
-                <ul style={ {listStyleType: "none"} }>
-                        <li>
+                
+                    <div>    
                             <div className="profile">
                                 <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
                                 <div>
@@ -304,8 +304,7 @@ const MainPage = ({attendee, handleData, submit}) => {
                                 <p>CEO at Rosaria Inc.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li>
+
                             <div className="profile">
                                 <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
                                 <div>
@@ -313,8 +312,7 @@ const MainPage = ({attendee, handleData, submit}) => {
                                 <p>President at Rosaria Inc.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li>
+                       
                             <div className="profile">
                                 <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
                                 <div>
@@ -322,17 +320,16 @@ const MainPage = ({attendee, handleData, submit}) => {
                                 <p>CTO at Waloed Inc.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li>
+                       
                             <div className="profile">
                                 <img alt="profile" src="https://png.pngitem.com/pimgs/s/508-5087236_tab-profile-f-user-icon-white-fill-hd.png" width="60px" height="60px"></img>
                                 <div>
                                 <p>Romina Inzaghi</p>
-                                <p>Senior Sales Manager at CryptoSr S.A</p>
+                                <p>CFO at Dhalmekia</p>
                                 </div>
                             </div>
-                        </li>
-                </ul>
+                    </div>   
+                
 
                 <p>Nearing the end of the webinar there will be a QA session where the attendants can ask questions freely to the guests</p>
                 <p>See you on the 11th!</p>
