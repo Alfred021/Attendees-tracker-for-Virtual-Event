@@ -24,7 +24,7 @@ Step 3: Deploy the site by running npm run deploy
 
 Open the terminal and type: npm run deploy
 
-## The App should be available at: [https://github.com/Alfred021/attendees-tracker-for-virtual-event](https://github.com/Alfred021/attendees-tracker-for-virtual-event)
+## The App should be available at: [https://alfred021.github.io/attendees-tracker-for-virtual-event/](https://alfred021.github.io/attendees-tracker-for-virtual-event/)
 
 # Getting Started with Create React App
 
