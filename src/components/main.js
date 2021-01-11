@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom"
 import MainPage from './mainpage.js';
 import Attendees from './attendees-list.js';
 import Modal from './modal.js';
-import "./main.css"
+import "../css/main.css"
 
 const Main = () => {
     const initialState = {
@@ -19,7 +19,6 @@ const Main = () => {
     const modal = useRef(null)
 
     const handleInput = (e) => {
-
         switch (e.target.name) {
             case "userName":
                 setAttendeeData({
@@ -124,7 +123,6 @@ const Main = () => {
             <Modal fade ref={modal}>
             <p>Success! We'll be in touch with you through the email that you provided us.</p>
             </Modal>
-
     </Router>
     )
 }

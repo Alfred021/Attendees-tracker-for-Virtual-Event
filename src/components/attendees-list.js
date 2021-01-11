@@ -1,4 +1,4 @@
-import "./attendees.css"
+import "../css/attendees.css"
 
 const Attendees = ({attendees}) => {
     return(

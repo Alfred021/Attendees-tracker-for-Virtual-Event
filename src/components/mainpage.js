@@ -1,4 +1,4 @@
-import "./main.css"
+import "../css/main.css"
 
 const MainPage = ({attendee, handleData, submit}) => {
 
@@ -279,7 +279,7 @@ const MainPage = ({attendee, handleData, submit}) => {
                 <br></br>
                 <label for="phone">Phone</label>
                 <br/>
-                <input type="tel" value={attendee.phone} onChange={handleData} name="phone" pattern="[0-9]{2} [0-9]{4} [0-9]{4}"></input>
+                <input type="tel" value={attendee.phone} onChange={handleData} name="phone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}"></input>
                 <br></br>
                 <label for="job">Job</label>
                 <br></br>
@@ -294,7 +294,6 @@ const MainPage = ({attendee, handleData, submit}) => {
                 <p>The Bitcoin has been in the news pretty often during the end of the 2020 and even at the beginning of 2021, it has seen a tremendous grow and it seems that has no ceiling for the moment.</p>
                 <p>In this webinar you are going to learn how to start investing in bitcoin, the best strategies from some of the experts on the subject</p>
                 <p>Our guests are:</p>
-
                 
                     <div>    
                             <div className="profile">

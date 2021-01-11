@@ -156,6 +156,9 @@ footer > p {
         padding: 1em;
         margin-top: 0.7em;
         margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
     }
 }
 
@@ -189,6 +192,9 @@ footer > p {
         padding: 1em;
         margin-top: 0.7em;
         margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
     }
 }
 
@@ -251,6 +257,9 @@ footer > p {
         padding: 1em;
         margin-top: 0.7em;
         margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
     }
 
 }
@@ -259,12 +268,12 @@ footer > p {
     .form {
         border: 2px solid slategrey;
         border-radius: 2em;
-        padding: 6em;   
+        padding: 6sem;   
         font-size: 1.2em;
     }
     
     .form > input {
-        width: 20em;
+        width: 25em;
         height: 3.2em;
         padding: 1em;
         margin-top: 0.7em;
@@ -272,7 +281,7 @@ footer > p {
     }
     
     .form > select {
-        width: 20em;
+        width: 25em;
         height: 3.2em;
         padding: 1em;
         margin-top: 0.7em;
@@ -280,10 +289,49 @@ footer > p {
     }
     
     .form > button {
-        width: 20em;
+        width: 20.6em;
         height: 3.2em;
         padding: 1em;
         margin-top: 0.7em;
         margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 3.5em;   
+        font-size: 1.2em;
+    }
+    
+    .form > input {
+        width: 15em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > select {
+        width: 15em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > button {
+        width: 12.4em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
     }
 }
