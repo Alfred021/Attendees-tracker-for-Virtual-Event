@@ -10,21 +10,21 @@
 
 .header {
     width: 100%;
-    background-color:turquoise;
-    color: white;
+    background-color:rgb(60, 218, 126);
+    color:darkviolet;
     box-sizing: border-box;  
     padding: 1em;
     align-items: baseline;
     text-align: center;
     padding-bottom: 2em;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .home-link {
-    background-color: turquoise;
-    border: 1px solid green;
+    font-weight: bold;
     border-radius: 1em;
     outline: none;
-    color: white;
+    color:darkviolet;
     padding: 0.5em;
     text-decoration: none;
     margin-left: 1em;
@@ -44,6 +44,7 @@
     padding: 5em;   
     font-size: 1.2em; 
     background-color: snow;
+    font-weight: bold;
 }
 
 .form > input {
@@ -104,7 +105,8 @@ img {
     align-items: center;
     justify-content: left;
     line-height: 0.4em;
-
+    font-weight: bold;
+    color: darkslategrey;
 }
 
 footer {
@@ -132,6 +134,7 @@ footer > p {
         border-radius: 2em;
         padding: 4.5em;   
         font-size: 1.2em; 
+        font-weight: bold;
     }
 
     .form > input {
@@ -168,6 +171,7 @@ footer > p {
         border-radius: 2em;
         padding: 4em;   
         font-size: 1.2em; 
+        font-weight: bold;
     }
 
     .form > input {
@@ -204,6 +208,7 @@ footer > p {
         border-radius: 2em;
         padding: 3.5em;   
         font-size: 1.2em; 
+        font-weight: bold;
     }
 }
 
@@ -213,6 +218,7 @@ footer > p {
         border-radius: 2em;
         padding: 3em;   
         font-size: 1.2em; 
+        font-weight: bold;
     }
 }
 
@@ -233,6 +239,7 @@ footer > p {
         border-radius: 2em;
         padding: 7em;   
         font-size: 1.2em;
+        font-weight: bold;
     }
     
     .form > input {
@@ -268,8 +275,9 @@ footer > p {
     .form {
         border: 2px solid slategrey;
         border-radius: 2em;
-        padding: 6sem;   
+        padding: 6em;   
         font-size: 1.2em;
+        font-weight: bold;
     }
     
     .form > input {
@@ -306,6 +314,7 @@ footer > p {
         border-radius: 2em;
         padding: 3.5em;   
         font-size: 1.2em;
+        font-weight: bold;
     }
     
     .form > input {
