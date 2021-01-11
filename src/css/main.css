@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    width: 100%;
+    background-color:turquoise;
+    color: white;
+    box-sizing: border-box;  
+    padding: 1em;
+    align-items: baseline;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.home-link {
+    background-color: turquoise;
+    border: 1px solid green;
+    border-radius: 1em;
+    outline: none;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.home-link:hover {
+    background-color:teal;
+}
+
+.row {
+    padding-top: 2em;
+}
+
+.form {
+    border: 2px solid slategrey;
+    border-radius: 2em;
+    padding: 5em;   
+    font-size: 1.2em; 
+    background-color: snow;
+}
+
+.form > input {
+    width: 23em;
+    height: 3.2em;
+    padding: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.form > select {
+    width: 23em;
+    height: 3.2em;
+    padding: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.form > button {
+    width: 23em;
+    height: 3.2em;
+    padding: 1em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    font-size: 0.695em;
+    font-weight: bold;
+    background-color: wheat;    
+}
+
+.form > button:hover {
+    background-color: tan;
+}
+
+.description {   
+    font-size: 1.1em;
+}
+
+.form-side {
+    padding: 1em 2em 3em 2em;
+    width: 50%;
+    float: left;
+}
+
+.description-side {
+    padding: 1em 2em 3em 2em;   
+    width: 50%;
+    float: left;
+}
+
+img {
+    background-color: white;
+    border-radius: 2em;
+    margin-right: 1em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    line-height: 0.4em;
+
+}
+
+footer {
+    display: inline-flex;
+    padding: 1.0em;
+    width: 100%;
+    border-top: 1px solid bisque;
+    font-size: 1.2em;
+    background-color: gainsboro;
+}
+
+footer > p {
+    margin-left: 5em;
+    margin-right: 10em;
+    width: 60%;
+}
+
+.logos {
+    width: 40%;
+}
+
+@media screen and (max-width: 1110px) {
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 4.5em;   
+        font-size: 1.2em; 
+    }
+
+    .form > input {
+        width: 19em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > select {
+        width: 19em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > button {
+        width: 19em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 4em;   
+        font-size: 1.2em; 
+    }
+
+    .form > input {
+        width: 15em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > select {
+        width: 15em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > button {
+        width: 15em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 3.5em;   
+        font-size: 1.2em; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 3em;   
+        font-size: 1.2em; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .form-side {
+        padding: 1em 2em 3em 2em;
+        width: 100%;
+    }
+    
+    .description-side {
+        padding: 1em 2em 3em 2em;   
+        width: 100%;
+    }
+
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 7em;   
+        font-size: 1.2em;
+    }
+    
+    .form > input {
+        width: 27em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > select {
+        width: 27em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > button {
+        width: 27em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 6sem;   
+        font-size: 1.2em;
+    }
+    
+    .form > input {
+        width: 25em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > select {
+        width: 25em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > button {
+        width: 20.6em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .form {
+        border: 2px solid slategrey;
+        border-radius: 2em;
+        padding: 3.5em;   
+        font-size: 1.2em;
+    }
+    
+    .form > input {
+        width: 15em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > select {
+        width: 15em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .form > button {
+        width: 12.4em;
+        height: 3.2em;
+        padding: 1em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+        font-size: 0.695em;
+        font-weight: bold;
+        background-color: wheat;   
+    }
+}
